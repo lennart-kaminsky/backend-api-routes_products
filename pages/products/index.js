@@ -12,7 +12,7 @@ export default function AllListingsPage() {
       <h1>All Listings</h1>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
+          <li key={product.id} class="card">
             <Link href={`/products/${product.id}`}>
               <h2>{product.name}</h2>
             </Link>

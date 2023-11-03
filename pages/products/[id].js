@@ -20,12 +20,12 @@ export default function ProductDetails() {
   if (isLoading) return <h1>loading...</h1>;
   console.log("Product", product);
   return (
-    <>
+    <div class="card">
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Category: {product.category}</p>
       <p>Price: {product.price + product.currency}</p>
       <Link href="/products">View all products</Link>
-    </>
+    </div>
   );
 }
